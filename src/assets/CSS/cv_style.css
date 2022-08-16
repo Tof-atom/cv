@@ -113,3 +113,30 @@ h1, h2, h3, h4, h5, h6{
 .lines::after{
    margin-right: -100%;
 }
+@media(max-width: 991.98px){
+    .cv-left h1,
+    .cv-left h2,
+    .cv-left h3,
+    .cv-left h4,
+    .cv-left h5,
+    .cv-left h6{
+        font-size: 1.3rem;
+    }
+
+    .cv-left ul{
+        line-height: 150%;
+        padding-left: 25px;
+    }
+}
+
+@media(max-width: 575.98px){
+
+    .cv{
+        margin-top: 0;
+    }
+    .photo-block img{
+        display: block;
+        max-width: 50%;
+        margin: 20px auto;
+    }
+}
