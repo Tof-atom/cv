@@ -5,20 +5,28 @@
     height: 100vh;
     background: url("../img/5-bg-temp.jpg") no-repeat center;
     background-size: cover;
-    position: relative;
-}
-
-.wrapper{
-    width: 300px;
-    height: 250px;
 
 }
 
-.screen img{
-    object-fit: cover;
-    width: 100%;
+.cv-screen{
+    width: 21%;
+    height: 27%;
+    position: absolute;
+    top:43%;
+    left: 40%;
+    margin: 0 auto;
+}
+
+.cv-screen:hover{
+    cursor: pointer;
+}
+/*
+.cv{
     height: 100%;
-}
+    width: 20%;
+    margin: 0 auto;
+    background: #0a53be;
+}*/
 
 .modal-backdrop{
     --bs-backdrop-opacity: 0.6;
@@ -44,3 +52,32 @@
     background: url("../img/iphone-no-bg.png") no-repeat center;
     background-size: cover;
 }
+
+#parallelogram {
+    width: 60px;
+    height: 123px;
+    -webkit-transform: skew(4deg);
+    -moz-transform: skew(-15deg);
+    -o-transform: skew(-15deg);
+   /* background: white;
+    opacity: 0.5;*/
+    position:absolute;
+    top:72%;
+    left: 30%;
+
+}
+
+#parallelogram:hover{
+    cursor: pointer;
+}
+/*
+#parallelogram:before{
+    display:block;
+    height:240px;
+    width:2px;
+    background:blue;
+    position:absolute;
+    left:0;
+    top:-20px;
+    content:'';
+}*/
