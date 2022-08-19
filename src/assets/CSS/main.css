@@ -31,7 +31,7 @@
 .modal-backdrop{
     --bs-backdrop-opacity: 0.6;
 }
-.contact{
+.phone{
     margin-left: auto;
     margin-right: auto;
     width:351px;
@@ -53,7 +53,7 @@
     background-size: cover;
 }
 
-#parallelogram {
+#phone_contact {
     width: 60px;
     height: 123px;
     -webkit-transform: skew(4deg);
@@ -67,10 +67,31 @@
 
 }
 
-#parallelogram:hover{
+#phone_contact:hover{
     cursor: pointer;
 }
+
+#projects_page{
+    width: 264px;
+    height: 35px;
+    -webkit-transform: skew(4deg);
+    -moz-transform: skew(-15deg);
+    -o-transform: skew(-15deg);
+    background: white;
+     opacity: 0.5;
+    position:absolute;
+    top:90%;
+    left: 41%;
+}
+
+#projects_page:hover{
+    cursor: pointer;
+}
+
+
 /*
+
+
 #parallelogram:before{
     display:block;
     height:240px;
@@ -81,3 +102,48 @@
     top:-20px;
     content:'';
 }*/
+
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup.open {
+    opacity:1;
+    visibility: visible;
+}
+
+.popup.open .popup_content.open{
+    transform: perspective(600px) translate(0px, 0%) rotate(0deg);
+    opacity: 1;
+}
+
+
+.popup_body{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup_content{
+    background-color: white;
+    color: black;
+    max-width: 800px;
+    padding: 30px;
+}
+
+.pop_title{
+    font-size: 20px;
+    margin: 0 0 1em 0;
+}
