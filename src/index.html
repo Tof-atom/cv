@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/dc1e871421.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
     <title>Alexander Gutkovsky</title>
 </head>
 <body>
@@ -40,15 +40,15 @@
         <!-- change all div clicks to one class or id-->
 
         <div class="body">
-            <div class="cv-screen" id="cv_page" onclick="location.href='./cv.html'" >
-
+            <div class="cv-screen" id="cv_page" onclick="window.open('./cv.html', '_blank');" >
             </div>
 
-            <div id="projects_page" onclick="location.href='https://github.com/Tof-atom?tab=repositories'" >
-
+            <div class="projects_page"  onclick="window.open('https://github.com/Tof-atom?tab=repositories', '_blank');">
             </div>
-            <div id="phone_contact" data-bs-toggle="modal" data-bs-target="#phone_Modal"></div>
-
+            <div class="phone_contact" data-bs-toggle="modal" data-bs-target="#phone_Modal">
+            </div>
+            <div class="about popup_link" >
+            </div>
              <!-- Modal -->
             <div class="modal fade" id="phone_Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
@@ -58,14 +58,24 @@
                 </div>
             </div>
         </div>
-        <div class="popup open">
-            <div class="popup_body">
-                <div class="popup_content open">
+        <div id="12" class="popup">
+            <div class="popup_body close-popup">
+                <div class="popup_content">
                     <div class="popup_title">
-                        sdfsl;fgjdfgjdondon d jmdjf doivjd jn;dfo nd;fjn d;jkofn d;lkn
+                        <h2>Hello, there!</h2>
+                        <p> My name is Alexander Gutkovsky. This is my webpage to introduce myself. Here you can find resume, project, contacts</p>
+                        <p>Navigation:(press on location to see more)</p>
+                        <ul>
+                            <li>Screen - to read my resume</li>
+                            <li>Keyboard - to check my projects</li>
+                            <li>Cup of tea - to open Welcome message</li>
+                            <li>IPhone - to contact me</li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
         </div>
+
 </body>
 </html>

@@ -53,7 +53,7 @@
     background-size: cover;
 }
 
-#phone_contact {
+.phone_contact {
     width: 60px;
     height: 123px;
     -webkit-transform: skew(4deg);
@@ -67,24 +67,24 @@
 
 }
 
-#phone_contact:hover{
+.phone_contact:hover{
     cursor: pointer;
 }
 
-#projects_page{
-    width: 264px;
-    height: 35px;
+.projects_page{
+    width: 295px;
+    height: 45px;
     -webkit-transform: skew(4deg);
     -moz-transform: skew(-15deg);
     -o-transform: skew(-15deg);
-    background: white;
-     opacity: 0.5;
+  /*  background: white;
+     opacity: 0.5;*/
     position:absolute;
-    top:90%;
+    top:91%;
     left: 41%;
 }
 
-#projects_page:hover{
+.projects_page:hover{
     cursor: pointer;
 }
 
@@ -102,6 +102,20 @@
     top:-20px;
     content:'';
 }*/
+
+.about{
+    width: 85px;
+    height: 90px;
+  /*  background: white;
+     opacity: 0.5;*/
+    position:absolute;
+    top:80%;
+    left: 66%;
+}
+
+.about:hover{
+    cursor: pointer;
+}
 
 .popup{
     position: fixed;
@@ -122,11 +136,20 @@
     visibility: visible;
 }
 
-.popup.open .popup_content.open{
+.popup.open .popup_content{
     transform: perspective(600px) translate(0px, 0%) rotate(0deg);
     opacity: 1;
 }
 
+/*.popup:target {
+    opacity:1;
+    visibility: visible;
+}
+
+.popup:target .popup_content{
+    transform: perspective(600px) translate(0px, 0%) rotate(0deg);
+    opacity: 1;
+}*/
 
 .popup_body{
     min-height: 100%;
@@ -141,6 +164,11 @@
     color: black;
     max-width: 800px;
     padding: 30px;
+    position: relative;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+
 }
 
 .pop_title{
